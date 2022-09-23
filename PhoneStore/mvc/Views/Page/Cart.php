@@ -204,8 +204,8 @@ if (!empty($err)) {
                                             </td>
                                             <td data-label="Product Name"><?= $row['product_name'] ?></td>
                                             <td data-label="Amount"> <input type="number" class="form-control" id="soluong" min="0" name="quantity[<?= $row['product_id'] ?>]" size="5px" value="<?= $_SESSION['cart'][$row['product_id']] ?>"></td>
-                                            <td class="text-right" data-label="Unit price"><?= number_format($row['price'], 0, ',') ?></td>
-                                            <td class="text-right" data-label="To money"><?= number_format($row['price'] * $_SESSION['cart'][$row['product_id']], 0, ',') ?></td>
+                                            <td class="text-right" data-label="Unit price"><?= number_format($row['price'], 0, ',','.') ?></td>
+                                            <td class="text-right" data-label="To money"><?= number_format($row['price'] * $_SESSION['cart'][$row['product_id']], 0, ',','.') ?></td>
 
                                             <td data-label="Action">
                                                 <a href="Cart&action=delete&id=<?= $row['product_id'] ?>" id="delete_3" data-sp-ma="4" class="btn btn btn-outline-danger">
@@ -227,7 +227,7 @@ if (!empty($err)) {
                                     } ?>
                                     <tr>
                                         <td colspan="4" data-label="">Sum Money</td>
-                                        <td colspan="3" data-label="Sum Money"><?= number_format($sum, 0, ',', '.') ?></td>
+                                        <td colspan="3" data-label="Sum Money"><?= number_format($sum, 0, ',') ?></td>
                                     </tr>
                                 <?php
                                 }
