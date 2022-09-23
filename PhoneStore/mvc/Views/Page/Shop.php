@@ -47,9 +47,9 @@ else if(isset($_GET['category_id'])){
                                     <ul class="list-unstyled">
                                         
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a class="btn btn-success text-white mt-2" href="<?=$a?>/Home/Cart&action=addgio&id=<?=$row['product_id']?>"><i class="far fa-eye"></i></a></li>
+                                        <li><a class="btn btn-success text-white mt-2" href="<?=$a?>/Home/product_detail&id=<?=$row['product_id']?>" ><i class="far fa-eye"></i></a></li>
                                 
-                                        <li><a class="btn btn-success text-white mt-2" href="<?=$a?>/Home/product_detail&id=<?=$row['product_id']?>"><i class="fas fa-cart-plus"></i></a></li>
+                                        <li><a class="btn btn-success text-white mt-2" href="<?=$a?>/Home/Cart&action=addgio&id=<?=$row['product_id']?>"><i class="fas fa-cart-plus"></i></a></li>
                                         
                                         
                                         </ul>

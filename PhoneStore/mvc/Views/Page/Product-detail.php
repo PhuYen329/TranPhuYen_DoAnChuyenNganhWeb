@@ -75,7 +75,7 @@
                                 </div>
                                 <p class="product-description"> 10.1 inch multi-touch screen</p>
                                 <!--<small class="text-muted">Old price: <s><span>10,990,000.00 VND</span></s></small>-->
-                                <h4 class="price">Current price: <span><?php echo number_format($row[5],0,',')?> VND</span></h4>
+                                <h4 class="price">Current price: <span><?php echo number_format($row[5],0,',','.')?> VND</span></h4>
                                 <p class="vote"><strong>100%</strong> goods <strong>Quality</strong>, guaranteed
                                     <strong>Ugh
                                         credit</strong>!</p>
